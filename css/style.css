@@ -187,6 +187,7 @@ header.autoshow.scrollOff {
 	top: -120px;
 }
 header div#logo {
+	max-width: 200px;
 	display: inline-block;
 	height: 100%;
 	float: left;
@@ -7593,7 +7594,7 @@ a, img {
 		margin-bottom: 30px;
 	}
 	header div#logo img {
-		max-width: 200px;
+		max-width: 100px;
 		height: auto;
 	}
 }
@@ -7615,7 +7616,7 @@ a, img {
 		font-size: 24px;
 	}
 	header div#logo img {
-		max-width: 200px;
+		max-width: 100px;
 		height: auto;
 	}
 	.pf_full_width.gallery_border .item {
