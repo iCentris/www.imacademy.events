@@ -3008,7 +3008,11 @@ span.teaser {
 
 .fa-facebook{background:#3e5a9b;}
 .fa-twitter{background:#55aded;}
-.fa-google-plus{background:#df4f37;}
+.fa-youtube{background:#df4f37;}
+.fa-instagram{
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);    
+}
 .fa-linkedin{background:#0075ad;}
 .fa-rss{background:#fb6506;}
 
@@ -4744,7 +4748,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', e
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 	
-}
 #btn-close-x {
 	width: 100px;
 	height: 100px;
