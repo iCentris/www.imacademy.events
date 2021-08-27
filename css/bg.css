@@ -17,8 +17,53 @@ background-size: 100%;
 	width: 50%;
 	margin: 0 !important;
 }
+.header-ima-logo img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: contain;
+}
+.header-buttons {
+	margin-top: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-buttons .header-button {
+	width: 40%;
+	padding: 24px 0px;
+	border: 2pt solid white;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none !important;
+	transition: 0.45s ease-in-out all;
+}
+.header-buttons .header-button:hover {
+	background-color: white;
+}
+.header-buttons .header-button span {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+	font-size: 2rem;
+	text-decoration: none !important;
+	transition: 0.45s ease-in-out all;
+}
+.header-buttons .header-button:hover span {
+	color: #c03b53;
+}
 @media (max-width: 767px) {
 	.__price-row {display: block;}
+	.header-buttons {
+		flex-direction: column;
+	}
+	.header-buttons .header-button {
+		width: 90% !important;
+	}
+	.header-button:nth-child(1) {
+		margin-bottom: 24px;
+	}
 }
 
 /* media query */
