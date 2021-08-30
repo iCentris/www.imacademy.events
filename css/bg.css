@@ -61,6 +61,7 @@ section,
     background-color: white;
 }
 .header-buttons .header-button span {
+    text-transform: lowercase;
     color: white;
     font-weight: 600;
     font-size: 2rem;
