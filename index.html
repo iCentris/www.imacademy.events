@@ -128,14 +128,14 @@
                                         <div id="defaultCountdown" class="countdown-s3"></div>
                                     </div>
 
-                                    <!-- <div class="header-buttons">
-                                        <a href="/" class="header-button">
+                                    <div class="header-buttons">
+                                        <a target="_blank" href="https://tickets.imacademy.events/v2/events/457/register_now" class="header-button">
                                             <span>Buy Admissions</span>
                                         </a>
-                                        <a href="/" class="header-button">
+                                        <a target="_blank" href="https://tickets.imacademy.events/v2/events/457/manage_tickets" class="header-button">
                                             <span>Manage Admissions</span>
                                         </a>
-                                    </div> -->
+                                    </div>
                                     
                                 </div>
 								
@@ -725,13 +725,16 @@
             <!-- section close -->
             
             <!-- section begin -->
-            <!-- <section id="section-tickets">
+            <section id="section-tickets">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-md-12 text-center">
-                            <h2 class="wow fadeInUp">Admissions</h2>
+                            <h2 class="wow fadeInUp">48 Hour Special Price</h2>
                             <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <span id="48hour-countdown"></span>
                         </div>
                         <div class="col-md-6 col-md-offset-3 text-center" style="margin-top: 42px;">
                             
@@ -745,16 +748,16 @@
                                             <div class="inner">
                                                 <div class="top">
                                                     <h2>General Admission</h2>
-                                                    <p class="price"><span class="currency">$</span> <b>39</b></p>
+                                                    <p class="price"><span class="currency">$</span> <b>197</b></p>
                                                 </div>
                                                 <div class="bottom">
-                                                    <ul>
+                                                    <!-- <ul>
                                                         <li><i class="icon_check"></i>1 Conference Day</li>
                                                         <li><i class="icon_check"></i>1 Workshop Day</li>
                                                         <li><i class="icon_check"></i>Regular Seat</li>
                                                         <li><i class="icon_check"></i>Free Coffee/Lunch</li>
                                                         <li><i class="icon_check"></i>One Certificate</li>
-                                                    </ul>
+                                                    </ul> -->
                                                     <a href="#section-register" class="btn-border scroll-to">Register</a>
                                                 </div>
                                             </div>
@@ -765,16 +768,16 @@
                                             <div class="inner">
                                                 <div class="top">
                                                     <h2>VIP</h2>
-                                                    <p class="price"><span class="currency">$</span> <b>199</b></p>
+                                                    <p class="price"><span class="currency">$</span> <b>297</b></p>
                                                 </div>
                                                 <div class="bottom">
-                                                    <ul>
+                                                    <!-- <ul>
                                                         <li><i class="icon_check"></i>Full Conference Day</li>
                                                         <li><i class="icon_check"></i>Full Workshop Day</li>
                                                         <li><i class="icon_check"></i>VIP Seat</li>
                                                         <li><i class="icon_check"></i>Free Coffee/Lunch</li>
                                                         <li><i class="icon_check"></i>Three Certificate</li>
-                                                    </ul>
+                                                    </ul> -->
                                                     <a href="#section-register" class="btn-border scroll-to">Register</a>
                                                 </div>
                                             </div>
@@ -786,7 +789,6 @@
                     </div>
                 </div>
             </section>
-             -->
             <!-- section close -->
 
             <!-- section begin -->
@@ -1077,6 +1079,11 @@
     <!-- <script src="js/map.js"></script> -->
     <script src="js/designesia.js"></script>
     <!-- <script src="js/validation.js"></script> -->
+    <script>
+        $('#48hour-countdown').countdown({until: new Date(2021, 8, 9, 11, 59)}, function(event) {
+            // $(this).html(event.strftime('%D days %H:%M:%S'));
+    });
+    </script>
 </body>
 
 </html>
