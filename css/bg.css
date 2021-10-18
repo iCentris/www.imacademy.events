@@ -100,7 +100,6 @@ section,
     width: 30%;
     padding: 24px 32px;
     border-radius: 8px;
-    background-color: green;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -178,22 +177,55 @@ section,
 }
 
 .agenda-bg1 {
-    background-color: red;
+    background: linear-gradient(
+        180deg,
+        #fbd311 0%,
+        #fbc211 33.33%,
+        #fbb111 66.67%,
+        #fb9f11 100%
+    );
 }
 .agenda-bg2 {
-    background-color: pink;
+    background-color: #dbdbdb;
+}
+.agenda-bg2 span {
+    color: #000000 !important;
 }
 .agenda-bg3 {
-    background-color: blue;
+    background: linear-gradient(
+        180deg,
+        #f38718 0%,
+        #ef7a1c 33.33%,
+        #eb6b22 66.67%,
+        #e75e28 100%
+    );
 }
 .agenda-bg4 {
-    background-color: orange;
+    background: linear-gradient(
+        180deg,
+        #e2672b 0%,
+        #dc592e 33.33%,
+        #d34831 66.67%,
+        #cb3635 100%
+    );
 }
 .agenda-bg5 {
-    background-color: purple;
+    background: linear-gradient(
+        180deg,
+        #c93336 0%,
+        #b82e44 33.33%,
+        #9f2659 66.67%,
+        #89216c 100%
+    );
 }
 .agenda-bg6 {
-    background-color: brown;
+    background: linear-gradient(
+        180deg,
+        #89216c 0%,
+        #751f76 33.33%,
+        #501c8a 66.67%,
+        #2d189b 100%
+    );
 }
 
 @media (max-width: 767px) {
