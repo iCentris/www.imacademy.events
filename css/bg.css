@@ -241,6 +241,25 @@ section,
     .header-button:nth-child(1) {
         margin-bottom: 24px;
     }
+    .agenda-group-block {
+        /* background-color: red; */
+    }
+    .agenda-month-date,
+    .agenda-day-date {
+        margin-left: 0px;
+    }
+    .agenda-month-date {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #898989;
+        margin-bottom: 8px;
+    }
+    .agenda-day-date {
+        font-size: 2.6rem;
+    }
+    .agenda-block {
+        width: 100%;
+    }
 }
 
 /* media query */
