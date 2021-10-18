@@ -71,6 +71,131 @@ section,
 .header-buttons .header-button:hover span {
     color: #c03b53;
 }
+
+/* AGENDA STYLES  */
+.agenda-group-block {
+    display: flex;
+    flex-direction: column;
+}
+.agenda-month-date {
+    margin-left: 12%;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.agenda-day-date {
+    margin-left: 12%;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.agenda-blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.agenda-block {
+    width: 30%;
+    padding: 24px 32px;
+    border-radius: 8px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    margin-bottom: 32px;
+}
+.agenda-title-with-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.agenda-title {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+.agenda-description {
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+.first-block-blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 24px 0px;
+}
+.first-block-blocks span {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.agenda-schedule-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.agenda-schedule-item--with-margin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+}
+.agenda-schedule-label {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+.agenda-schedule-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.agenda-schedule-time {
+    margin-top: 6px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.agenda-schedule-time span {
+    font-weight: 300;
+}
+.extra-label-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra-label-container span {
+    width: 26%;
+    font-size: 1.8rem;
+    color: #898989;
+    font-weight: 700;
+}
+
+.agenda-bg1 {
+    background-color: red;
+}
+.agenda-bg2 {
+    background-color: pink;
+}
+.agenda-bg3 {
+    background-color: blue;
+}
+.agenda-bg4 {
+    background-color: orange;
+}
+.agenda-bg5 {
+    background-color: purple;
+}
+.agenda-bg6 {
+    background-color: brown;
+}
+
 @media (max-width: 767px) {
     .__price-row {
         display: block;
