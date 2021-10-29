@@ -1706,6 +1706,7 @@ a.btn-border {
     font-size: 13px;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
 }
 a.btn-border:hover {
     background: #ffffff;
@@ -2888,8 +2889,18 @@ span.teaser {
 }
 .pricing-s1 .bottom {
     border-top: 0px;
-    padding-bottom: 5px;
-    text-align: center;
+    padding: 15px 30px 5px;
+}
+.pricing-s1 .heading {
+    color: #fff;
+}
+.pricing-s1 .bottom .pricing-heading {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.pricing-s1 .bottom .pricing-footnote {
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
 .pricing-s1 .bottom ul {
     list-style: none;
@@ -5638,9 +5649,6 @@ color:rgba(0,0,0,1) !important;
 .no-bottom {
     margin-bottom: 0;
     padding-bottom: 0;
-}
-p {
-    margin-bottom: 20px;
 }
 p.intro {
     color: #555;
