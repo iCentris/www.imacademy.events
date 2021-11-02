@@ -1719,7 +1719,7 @@ a.btn-custom,
 .btn-border:hover {
     background: #ffffff;
     color: #000 !important;
-    cursor: pointer
+    cursor: pointer;
 }
 .btn-rsvp {
     color: #ffffff !important;
@@ -5973,9 +5973,8 @@ section.no-padding {
         rgba(73, 145, 227, 0.9) 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     padding: 10%;
     grid-gap: 40px;
 }
@@ -7761,11 +7760,6 @@ img {
     }
     .sm-mb30 {
         margin-bottom: 30px;
-    }
-
-    .bg-custom {
-        background-attachment: scroll !important;
-        background-position: top !important;
     }
 }
 
