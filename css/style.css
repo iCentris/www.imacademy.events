@@ -5977,6 +5977,7 @@ section.no-padding {
     grid-template-rows: auto 1fr auto;
     padding: 10%;
     grid-gap: 40px;
+    height: 100%;
 }
 .full-height .overlay-bg,
 .full-height .overlay-gradient {
