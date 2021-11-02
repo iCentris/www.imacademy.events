@@ -799,9 +799,8 @@
                                     <p>9am - 12:30pm</p>
                                     <p>2pm - 6pm</p>
                                 </div>
-                                <select class="btn-border scroll-to" name="languages" id="languages">
+                                <select class="btn-border scroll-to" name="languages" id="languages" style="width: 100%; outline: none; -webkit-appearance:none;">
                                     <option value="">BUY</option>
-                                    <option id="redirecting" style="display: none;" value="redirecting">Redirecting...</option>
                                     <option  value="https://tickets.imacademy.events/v2/events/490/register_now"><a target="_blank" href="">English</a></option>
                                     <option  value="https://tickets.imacademy.events/v2/events/491/register_now"><a target="_blank" href="">Spanish</a></option>
                                     <option  value="https://tickets.imacademy.events/v2/events/492/register_now"><a target="_blank" href="">German</a></option>
@@ -1292,8 +1291,8 @@
     function redirect(e) {
         if (!e.target.value) return
         location = e.target.value;
-        document.getElementById('redirecting').style.display = "unset";
-        languages.value = 'redirecting'
+        //document.getElementById('redirecting').style.display = "unset";
+        //languages.value = 'redirecting'
     }
 
 function updateValue(e) {
