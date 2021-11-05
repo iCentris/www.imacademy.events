@@ -32,12 +32,17 @@
         }
     </style>
     <style>
+        .dropdowns {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
         .dropdown {
           position: relative;
           display: inline-block;
         }
         
-        .dropdown-content {
+        .dropdown-content, .watch-now-dropdown-content {
           display: none;
           position: static;
           background-color: #ffffff;
@@ -50,7 +55,7 @@
           margin-top: 8px;
         }
         
-        .dropdown-content a {
+        .dropdown-content a, .watch-now-dropdown-content a {
           color: black;
           padding: 12px 16px;
           text-decoration: none;
@@ -58,13 +63,15 @@
           display: block;
         }
 
-        .dropdown-content a:first-child {
+        .dropdown-content a:first-child, .watch-now-dropdown-content a:first-child {
             border-top: 0;
         }
         
-        .dropdown a:hover {background-color: #ddd;}
+        .dropdown a:hover, .watchNowdropbtn a:hover {
+            background-color: #ddd;
+        }
 
-        .dropbtn {
+        .dropbtn, .watchNowdropbtn {
             width: 100%;
             text-align:center;
         }
@@ -111,6 +118,7 @@
         
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
+            console.log('##', event.target)
           if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
@@ -121,6 +129,23 @@
               }
             }
           }
+
+          if (!event.target.matches('.watchNowdropbtn')) {
+            var dropdowns = document.getElementsByClassName("watch-now-dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myWatchNowFunction() {
+          document.getElementById("myWatchNowDropdown").classList.toggle("show");
         }
     </script>
 </head>
@@ -164,8 +189,8 @@
                                     </div>
                                     <div class="spacer-half"></div>
                                     <div class="subtitle s2"><span><i class="fa fa-calendar-o orange"></i>November 4-6, 2021</span><span><i class="fa fa-map-marker orange"></i>Houston, TX</span></div>
-									<div class="spacer-single"></div>
-                                    <div id="defaultCountdown"></div>
+									<!-- <div class="spacer-single"></div> -->
+                                    <!-- <div id="defaultCountdown"></div> -->
                                     <div class="header-buttons">
                                         <a target="_blank" href="https://tickets.imacademy.events/v2/events/457/register_now" class="header-button">
                                             <span>Buy Admissions</span>
@@ -245,18 +270,32 @@
                                     <p>9am - 12:30pm</p>
                                     <p>2pm - 6pm</p>
                                 </div>
-                                <div class="dropdown">
-                                    <button onmouseup="myFunction()" class="simple-border-btn dropbtn">Buy</button>
-                                    <div id="myDropdown" class="dropdown-content">
-                                        <a href="https://tickets.imacademy.events/v2/events/490/register_now">English</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/491/register_now">Spanish</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/492/register_now">German</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/493/register_now">French</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/494/register_now">Portuguese</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/495/register_now">Italian</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/496/register_now">Polish</a>
+                                <div class="dropdowns">
+                                    <div class="dropdown">
+                                        <button onmouseup="myFunction()" class="simple-border-btn dropbtn">Buy</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="https://tickets.imacademy.events/v2/events/490/register_now">English</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/491/register_now">Spanish</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/492/register_now">German</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/493/register_now">French</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/494/register_now">Portuguese</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/495/register_now">Italian</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/496/register_now">Polish</a>
+                                        </div>
                                     </div>
-                                  </div>
+                                    <div class="dropdown">
+                                        <button onmouseup="myWatchNowFunction()" class="simple-border-btn watchNowdropbtn">Watch Now</button>
+                                        <div id="myWatchNowDropdown" class="watch-now-dropdown-content">
+                                            <a href="https://tickets.imacademy.events/v2/events/490/host_connect">English</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/491/host_connect">Spanish</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/492/host_connect">German</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/493/host_connect">French</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/494/host_connect">Portuguese</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/495/host_connect">Italian</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/496/host_connect">Polish</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
