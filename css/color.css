@@ -9,10 +9,6 @@
 .bg-purple{background-color:#694c8b;}
 .bg-purple-dark{background-color:#383069;}
 
-.countdown-section {
-	border-color: white !important;
-}
-
 .countdown-s5 .countdown-section:nth-child(2n+2){
 	background-color:#fc4668;
 }

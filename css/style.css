@@ -2078,6 +2078,15 @@ h3 {
     margin-bottom: 20px;
     font-weight: 600;
 }
+.subtitle.s2.palm {
+    margin-top: -15%;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10%;
+}
+.subtitle.s2 span:first-child {
+    padding-left: 0;
+}
 .subtitle.s2 {
     font-size: 16px;
     font-weight: 500;
@@ -2874,7 +2883,6 @@ span.teaser {
     background-size: contain;
 }
 .pricing-s1 .top {
-    color: #eee;
     color: #ecf0f1;
     text-align: center;
     font-family: 'Montserrat';
@@ -3028,8 +3036,8 @@ span.teaser {
     justify-content: center;
 }
 .preloader-image {
-    width: 100%;
-    padding: 10%
+    width: 80%;
+    padding: 0%
 }
 .preloader1 {
     width: 60px;
@@ -5946,7 +5954,18 @@ section.no-padding {
         rgba(136, 73, 227, 0.9) 0%,
         rgba(73, 145, 227, 0.9) 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); IE6-9 fallback on horizontal gradient */
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    background-image: url('../images/background/NEXT_EVENTbackground.jpg');
 }
 
 .overlay-bg.t50 {
@@ -7933,6 +7952,10 @@ img {
         display: block;
         margin: 0;
         padding: 0;
+    }
+    .subtitle.s2.palm {
+        margin-top: -10%;
+        font-size: 20px;
     }
 }
 
