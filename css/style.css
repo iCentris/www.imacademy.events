@@ -2070,8 +2070,15 @@ h3 {
 }
 .subtitle.s2.palm {
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 500;
-  margin-left: 14%;
+  margin-left: 20%;
+  color: #44585d !important;
+}
+.subtitle.s2.palm h2 {
+  color: #44585d !important;
 }
 .subtitle.s2 span:first-child {
   padding-left: 0;
@@ -2854,7 +2861,8 @@ span.teaser {
 }
 .section-divider {
   height: 150px;
-  background: #21e1af;
+  background-image: url('../images/background/bg.png');
+  background-size: cover;
 }
 .section-container {
   display: flex;
@@ -2867,7 +2875,6 @@ span.teaser {
 .logo-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: center;
   justify-content: center;
   width: 400px !important;
@@ -2893,13 +2900,15 @@ span.teaser {
   transition: box-shadow 1s;
   -webkit-transition: box-shadow 1s;
   -moz-transition: box-shadow 1s;
+  background-image: url('../images/background/bg.png');
+  background-size: cover;
 }
 .pricing-item .top {
   color: #ecf0f1;
   text-align: center;
   font-family: "Montserrat";
   width: 100%;
-  height: 115px;
+  /* height: 115px; */
   display: flex;
   flex-direction: column;
   margin-bottom: -18px;
@@ -2918,18 +2927,46 @@ span.teaser {
   margin: 0px;
 }
 .pricing-item .top .price {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   display: flex;
   justify-content: center;
 }
-.pricing-item .top .price .dollar-sign {
+.dollar-sign {
   font-size: 24px;
   margin: 8px 8px 0 0;
 }
-.pricing-item .top .price .dollar-value {
+.dollar-value {
   font-size: 48px;
   font-weight: bold;
+}
+.strikethrough-price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.strikethrough-price {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 0 4px;
+  margin-right: 20px;
+}
+.strikethrough-price:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(12deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform:rotate(12deg);
+  -o-transform:rotate(12deg);
+  transform:rotate(12deg);
 }
 .pricing-item .buy-manage-buttons {
   display: flex;
@@ -5988,7 +6025,8 @@ section.no-padding {
   height: 100vh;
   z-index: 100;
   top: 0;
-  background-image: url("../images/background/NEXT_EVENTbackground.jpg");
+  background-image: url("../images/background/bg.png");
+  background-size: cover;
 }
 
 .overlay-bg.t50 {
@@ -5998,25 +6036,25 @@ section.no-padding {
   background: rgba(24, 25, 27, 0.8);
 }
 .pricing-item .inner {
-    border-radius: 8px;
+  border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8849e3+0,4991e3+100&0.5+0,0.5+100 */
-  background: -moz-linear-gradient(
+  /* background: -moz-linear-gradient(
     45deg,
     rgba(41, 241, 156, 0.9) 0%,
     rgba(2, 161, 249, 0.9) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
+  ); FF3.6-15 */
+  /* background: -webkit-linear-gradient(
     45deg,
     rgba(41, 241, 156, 0.9) 0%,
     rgba(2, 161, 249, 0.9) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
+  ); Chrome10-25,Safari5.1-6 */
+  /* background: linear-gradient(
     45deg,
     rgba(41, 241, 156, 0.9) 0%,
     rgba(2, 161, 249, 0.9) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  ); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -7992,6 +8030,9 @@ img {
   .footer-terms-container {
     grid-template-columns: 1fr;
     grid-gap: 0px;
+  }
+  .subtitle.s2.palm h2 {
+    font-size: 15px;
   }
 }
 
