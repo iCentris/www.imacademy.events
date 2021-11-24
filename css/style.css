@@ -5255,6 +5255,18 @@ a.img-icon-zoom {
   color: #555;
   border-color: #555;
 }
+.footer-terms-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 30px;
+  }
+  .copyright-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 .de_light .widget_tags li a:hover {
   color: #111;
   border-color: #111;
