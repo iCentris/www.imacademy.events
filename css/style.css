@@ -2861,8 +2861,7 @@ span.teaser {
 }
 .section-divider {
   height: 150px;
-  background-image: url('../images/background/bg.png');
-  background-size: cover;
+  background: #000;
 }
 .section-container {
   display: flex;
@@ -2944,6 +2943,7 @@ span.teaser {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6px;
 }
 .strikethrough-price {
   position: relative;
@@ -2952,6 +2952,9 @@ span.teaser {
   justify-content: center;
   padding: 0 4px;
   margin-right: 20px;
+}
+.strikethrough-price .dollar-value {
+  font-size: 30px;
 }
 .strikethrough-price:before {
   position: absolute;
@@ -6025,7 +6028,7 @@ section.no-padding {
   height: 100vh;
   z-index: 100;
   top: 0;
-  background-image: url("../images/background/bg.png");
+  background-image: url("../images/background/IMbeyond_bg1920.jpg");
   background-size: cover;
 }
 
@@ -6055,7 +6058,8 @@ section.no-padding {
     rgba(41, 241, 156, 0.9) 0%,
     rgba(2, 161, 249, 0.9) 100%
   ); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808849e3', endColorstr='#804991e3',GradientType=1 ); IE6-9 fallback on horizontal gradient */
+  background: #000;
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 10%;
