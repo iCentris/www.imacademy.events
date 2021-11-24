@@ -2956,6 +2956,10 @@ span.teaser {
 .strikethrough-price .dollar-value {
   font-size: 30px;
 }
+.strikethrough-price .dollar-sign {
+  font-size: 20px;
+  margin: 3px 4px 0 0;
+}
 .strikethrough-price:before {
   position: absolute;
   content: "";
