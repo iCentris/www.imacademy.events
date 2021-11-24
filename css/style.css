@@ -710,8 +710,6 @@ header.side-header {
   border-bottom: none !important;
   margin: 0;
 }
-header.side-header {
-}
 header.side-header .social-icons-2 {
   margin: 0 auto;
   margin-top: 50px !important;
@@ -950,13 +948,9 @@ header.header-light .logo-2 {
 #blog-comment li li .avatar {
   position: absolute;
 }
-#blog-comment li li .comment {
-}
 .comment-info {
   margin-left: 85px;
   margin-bottom: 5px;
-}
-.comment-info span {
 }
 .comment-info .c_name {
   display: block;
@@ -974,8 +968,6 @@ header.header-light .logo-2 {
 }
 .blog-list h3 {
   color: #333;
-}
-.blog-list .post-wrapper {
 }
 .blog-read h3 {
   color: #333;
@@ -2895,9 +2887,9 @@ span.teaser {
   width: 300px;
   height: 100%;
   color: #ffffff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   transition: box-shadow 1s;
   -webkit-transition: box-shadow 1s;
   -moz-transition: box-shadow 1s;
@@ -6006,6 +5998,9 @@ section.no-padding {
   background: rgba(24, 25, 27, 0.8);
 }
 .pricing-item .inner {
+    border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8849e3+0,4991e3+100&0.5+0,0.5+100 */
   background: -moz-linear-gradient(
     45deg,
