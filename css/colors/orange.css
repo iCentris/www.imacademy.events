@@ -1,4 +1,4 @@
-/* default color: #ffa854  */
+/* default color: #21e1af  */
 .bg-color,
 section.bg-color,
 section.call-to-action,
@@ -60,7 +60,7 @@ span.overlay,
 a.btn-fullwidth,
 .de_testi.opt-3 blockquote:before
 {
-	background-color:#ffa854 ;
+	background-color:#21e1af ;
 }
 
 .feature-box i,
@@ -118,7 +118,7 @@ h2.hs1 span,
 .countdown-s4 .countdown-period,
 .pricing-item .bottom ul li i
 {
-	color:#ffa854;
+	color:#21e1af;
 }
 
 .feature-box i,
@@ -142,7 +142,7 @@ h2.hs1 span,
 .de_tab.tab_style_4 .de_nav
 {
 
-	border-color:#ffa854 ;
+	border-color:#21e1af ;
 }
 
 .box-fx .inner,
@@ -159,11 +159,11 @@ h2.hs1 span,
 .text-light .separator span:after ,
 .form-underline input[type=text]:focus, .form-underline textarea:focus, .form-underline input[type=email]:focus, .form-underline select:focus
 {
-	border-bottom-color:#ffa854 ;
+	border-bottom-color:#21e1af ;
 }
 
 .preloader1 {
-	border-top-color:#ffa854 ;
+	border-top-color:#21e1af ;
 }
 
 

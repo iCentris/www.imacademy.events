@@ -75,7 +75,7 @@ section,
     font-size: 2rem;
 }
 .header-buttons .header-button:hover span {
-    color: #c03b53;
+    color: #12c3d2;
 }
 
 /* AGENDA STYLES  */
@@ -313,5 +313,26 @@ section,
         background-size: auto 100% !important;
         background-attachment: scroll !important;
         background-position: top !important;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .header-buttons {
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        align-items: center;
+        width: 80%;
+    }
+    .header-buttons .header-button {
+        padding: 12px 0px;
+        width: 100%;
+    }
+    .header-buttons .header-button span {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .header-buttons .header-button:hover span {
+        color: #12c3d2;
     }
 }
