@@ -335,4 +335,13 @@ section,
     .header-buttons .header-button:hover span {
         color: #12c3d2;
     }
+    .header-logo {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .section-logo {
+        width: 70% !important;
+        height: 70% !important;
+        object-fit: contain;
+    }
 }

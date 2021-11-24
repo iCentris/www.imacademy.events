@@ -654,7 +654,7 @@ header.header-mobile.header-light #menu-btn {
 /* ================================================== */
 
 section {
-  padding: 100px 0 100px 0;
+  padding: 8% 0;
   overflow: hidden;
   position: relative;
 }
@@ -2071,7 +2071,7 @@ h3 {
 .subtitle.s2.palm {
   font-size: 20px;
   font-weight: 500;
-  margin-left: 73px;
+  margin-left: 14%;
 }
 .subtitle.s2 span:first-child {
   padding-left: 0;
