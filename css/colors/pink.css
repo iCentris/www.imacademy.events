@@ -55,7 +55,7 @@ span.overlay,
 .social-icons-sm i:hover,
 .btn-rsvp,
 .btn-close,
-.pricing-s1 .ribbon,
+.pricing-item .ribbon,
 .de_tab.tab_style_4 .de_nav li.active,
 a.btn-fullwidth,
 .de_testi.opt-3 blockquote:before
@@ -116,7 +116,7 @@ h2.hs1 span,
 .de_light #mainmenu li a.active,
 .profile_pic .subtitle,
 .countdown-s4 .countdown-period,
-.pricing-s1 .bottom ul li i
+.pricing-item .bottom ul li i
 {
 	color:#fc4668;
 }

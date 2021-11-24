@@ -76,15 +76,6 @@
             text-align:center;
         }
 
-        .pricing-s1 {
-            overflow: visible;
-            display: block;
-        }
-
-        .pricing-items {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-
         .simple-border-btn {
             border: solid 1px rgba(255, 255, 255, 1);
             background-color: transparent;
@@ -173,11 +164,11 @@
                         <!-- mainmenu begin -->
                         <nav>
                             <ul id="mainmenu">
-                                <li><a class="active" href="#top">Home</a></li>
+                                <li><a class="active" href="#barcelona">Barcelona</a></li>
                                 <!-- <li><a href="#section-about">About</a></li> -->
                                 <!-- <li><a href="#section-speakers">Speakers</a></li> -->
                                 <!-- <li><a href="#section-schedules">Schedules</a></li> -->
-                                <li><a href="#section-tickets">Admissions</a></li>
+                                <li><a href="#palm-beach">Palm Beach</a></li>
                                 <!-- <li><a href="#section-register">Register</a></li>								 -->
 								<!-- <li><a href="#section-gallery">Gallery</a></li> -->
                                 <!-- <li><a href="#section-sponsors">Sponsors</a></li> -->
@@ -220,20 +211,20 @@
 					<div class="center-y relative">
                         <div class="container">
                             <div class="row">
-								<div class="col-md-12 text-center">
-									<div class="spacer-single sm-hide"></div>
-                                    <div class="inline-block header-palm-logo">
-                                        <img src="images/logo/NEXT_EVENTlogo.png" >
-                                    </div>
-                                    <div class="subtitle s2 palm">MAR 10-12</div>
+								<div class="col-md-12 text-center header-container">
+									<!-- <div class="spacer-single sm-hide"></div> -->
+                                    <img class="header-logo" src="images/logo/NEXT_EVENTlogo.png" >
+                                    <!-- <div class="subtitle s2 palm">MAR 10-12</div> -->
 									<!-- <div class="spacer-single"></div> -->
                                     <!-- <div id="defaultCountdown"></div> -->
-                                    <div class="header-buttons">
-                                        <a target="_blank" href="https://tickets.imacademy.events/v2/events/499/register_now" class="header-button">
-                                            <span>Buy Admissions</span>
+                                    <div 
+                                    id="header-buttons"
+                                    class="header-buttons">
+                                        <a href="#barcelona" class="header-button">
+                                            <span>go to Barcelona</span>
                                         </a>
-                                        <a target="_blank" href="https://tickets.imacademy.events/v2/events/499/manage_tickets" class="header-button">
-                                            <span>Manage Admissions</span>
+                                        <a href="#palm-beach" class="header-button">
+                                            <span>go to Palm Beach</span>
                                         </a>
                                     </div>
                                 </div>
@@ -782,124 +773,282 @@
             
             <!-- section begin -->
             <!-- <section id="section-tickets" class=section-tickets> -->
-            <section>
-                <div class="text-center">
-                    <h2 class="wow fadeInUp">pricing</h2>
-                    <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
-                    <div class="spacer-half"></div>
-                </div>
-                    <!-- <div id="defaultCountdown"></div> -->
-                <div class="pricing-items">
-                    <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
-                            <div class="inner">
-                                <div class="top">
-                                    <div>
-                                        <h2>General Admission</h2>
-                                        <!-- <h3>In person</h3> -->
-                                    </div>
-                                    <div class="price">
-                                        <p class="dollar-sign">$</p>
-                                        <p class="dollar-value">197</p>
-                                    </div>
-                                </div>
-                                <div></div>
-                                <a target="_blank" href="https://tickets.imacademy.events/v2/events/499/register_now" class="simple-border-btn scroll-to">BUY</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" data-bgimage="url('./images/VIP.jpg')">
-                            <div class="inner">
-                                <div class="top">
-                                    <div>
-                                        <h2>VIP</h2>
-                                        <!-- <h3>In person</h3> -->
-                                    </div>
-                                    <div class="price">
-                                        <p class="dollar-sign">$</p>
-                                        <p class="dollar-value">297</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <!-- <p>Experience full immersion with the best seats in the house</p> -->
-                                </div>
-                                <a target="_blank" href="https://tickets.imacademy.events/v2/events/499/register_now" class="simple-border-btn scroll-to">BUY</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" data-bgimage="url('./images/VIP.jpg')">
-                            <div class="inner">
-                                <div class="top">
-                                    <div>
-                                        <h2>VIP+</h2>
-                                        <!-- <h3>In person</h3> -->
-                                    </div>
-                                    <div class="price">
-                                        <p class="dollar-sign">$</p>
-                                        <p class="dollar-value">397</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <!-- <p>Experience full immersion with the best seats in the house</p> -->
-                                </div>
-                                <a target="_blank" href="https://tickets.imacademy.events/v2/events/501/register_now" class="simple-border-btn scroll-to">BUY</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" data-bgimage="url('./images/livestreaming_background.jpg')">
-                            <div class="inner">
-                                <div class="top">
-                                    <div>
-                                        <h2>Livestreaming</h2>
-                                    </div>
-                                    <div class="price">
-                                        <p class="dollar-sign">$</p>
-                                        <p class="dollar-value">99</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p>Unable to attend IM UNITED in person? Don't miss out and sign up for the livestreaming starting Nov 5, 2021</p>
-                                    <p class=small-heading>Nov 5, 2021</p>
-                                    <p>9am - 12:30pm</p>
-                                    <p>2pm - 6pm</p>
-                                    <p class=small-heading>Nov 6, 2021</p>
-                                    <p>9am - 12:30pm</p>
-                                    <p>2pm - 6pm</p>
-                                </div>
-                                <div class="dropdown">
-                                    <button onmouseup="myFunction()" class="simple-border-btn dropbtn">Buy</button>
-                                    <div id="myDropdown" class="dropdown-content">
-                                        <a href="https://tickets.imacademy.events/v2/events/490/register_now">English</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/491/register_now">Spanish</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/492/register_now">German</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/493/register_now">French</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/494/register_now">Portuguese</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/495/register_now">Italian</a>
-                                        <a href="https://tickets.imacademy.events/v2/events/496/register_now">Polish</a>
-                                    </div>
-                                  </div>
-                                <select class="btn-border" name="languages" id="languages" style="width: 100%; outline: none; -webkit-appearance:none; text-indent: 5px;">
-                                    <option value="">BUY</option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/490/register_now"><a target="_blank" href="">English</a></option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/491/register_now"><a target="_blank" href="">Spanish</a></option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/492/register_now"><a target="_blank" href="">German</a></option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/493/register_now"><a target="_blank" href="">French</a></option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/494/register_now"><a target="_blank" href="">Portuguese</a></option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/495/register_now"><a target="_blank" href="">Italian</a></option>
-                                    <option  value="https://tickets.imacademy.events/v2/events/496/register_now"><a target="_blank" href="">Polish</a></option>
-                                </select>
-                            </div>
-                        </div>
+            <section id="barcelona">
+                <div class="section-container">
+                    <!-- <div class="text-center">
+                        <h2 class="wow fadeInUp">pricing</h2>
+                        <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                        <div class="spacer-half"></div>
                     </div> -->
-                </div>
-                <div class="col-md-12 text-center" style="margin-top: 48px;">
-                    <h3>All sales are final. Admissions are non-refundable.</h3>
+                        <!-- <div id="defaultCountdown"></div> -->
+                    <div class="logo-container">
+                        <img class="section-logo" src="images/logo/NEXT_EVENTlogo.png">
+                        <div class="subtitle s2 palm">FEB XX-XX</div>
+                    </div>
+                    <div class="pricing-items">
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>General Admission</h2>
+                                            <!-- <h3>Early Bird Pricing</h3> -->
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">€</p>
+                                            <p class="dollar-value">149*</p>
+                                        </div>
+                                        <p>* Limited Availability</p>
+                                    </div>
+                                    <div>
+                                        <h3 style="color: white; text-align: center; margin: 0px;">Early Bird Pricing</h3>
+                                    </div>
+                                    <div class="buy-manage-buttons">
+                                        <a target="_blank" href="" class="simple-border-btn scroll-to">BUY NOW</a>
+                                        <a style="text-align: center; color: white;" target="_blank" href="" scroll-to">Manage GA Admissions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>VIP</h2>
+                                            <!-- <h3>Early Bird Pricing</h3> -->
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">€</p>
+                                            <p class="dollar-value">299</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 8px;">Enter 30 minutes early</p>
+                                        <p style="margin-bottom: 8px;">Special Door Entry</p>
+                                        <p style="margin-bottom: 8px;">Special Seating Area</p>
+                                    </div>
+                                    <div class="buy-manage-buttons">
+                                        <a target="_blank" href="" class="simple-border-btn scroll-to">BUY NOW</a>
+                                        <a style="text-align: center; color: white;" target="_blank" href="" scroll-to">Manage VIP Admissions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>VIP+</h2>
+                                            <!-- <h3>Early Bird Pricing</h3> -->
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">€</p>
+                                            <p class="dollar-value">379</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 8px;">Includes Fast Pass</p>
+                                        <p style="margin-bottom: 8px;">Includes Party Pass</p>
+                                        <p style="margin-bottom: 8px;">Includes Event Gift</p>
+                                    </div>
+                                    <div class="buy-manage-buttons">
+                                        <a target="_blank" href="" class="simple-border-btn scroll-to">BUY NOW</a>
+                                        <a style="text-align: center; color: white;" target="_blank" href="" scroll-to">Manage VIP+ Admissions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" data-bgimage="url('./images/livestreaming_background.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>Livestreaming</h2>
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">$</p>
+                                            <p class="dollar-value">99</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Unable to attend IM UNITED in person? Don't miss out and sign up for the livestreaming starting Nov 5, 2021</p>
+                                        <p class=small-heading>Nov 5, 2021</p>
+                                        <p>9am - 12:30pm</p>
+                                        <p>2pm - 6pm</p>
+                                        <p class=small-heading>Nov 6, 2021</p>
+                                        <p>9am - 12:30pm</p>
+                                        <p>2pm - 6pm</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button onmouseup="myFunction()" class="simple-border-btn dropbtn">Buy</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="https://tickets.imacademy.events/v2/events/490/register_now">English</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/491/register_now">Spanish</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/492/register_now">German</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/493/register_now">French</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/494/register_now">Portuguese</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/495/register_now">Italian</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/496/register_now">Polish</a>
+                                        </div>
+                                      </div>
+                                    <select class="btn-border" name="languages" id="languages" style="width: 100%; outline: none; -webkit-appearance:none; text-indent: 5px;">
+                                        <option value="">BUY</option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/490/register_now"><a target="_blank" href="">English</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/491/register_now"><a target="_blank" href="">Spanish</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/492/register_now"><a target="_blank" href="">German</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/493/register_now"><a target="_blank" href="">French</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/494/register_now"><a target="_blank" href="">Portuguese</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/495/register_now"><a target="_blank" href="">Italian</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/496/register_now"><a target="_blank" href="">Polish</a></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <h3 style="text-align: center;">All sales are final. Admissions are VAT inclusive and are non-refundable. Terms and Conditions apply. All admissions for IM BEYOND Barcelona are sold by IM MASTERY ACADEMY GLOBAL SL and processed by International Markets Live Inc on behalf of IM MASTERY ACADEMY GLOBAL SL.</h3>
                 </div>
             </section>
+            <div class="section-divider"></div>
+            <section id="palm-beach">
+                <div class="section-container">
+                    <!-- <div class="text-center">
+                        <h2 class="wow fadeInUp">pricing</h2>
+                        <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
+                        <div class="spacer-half"></div>
+                    </div> -->
+                        <!-- <div id="defaultCountdown"></div> -->
+                    <div class="logo-container">
+                        <img class="section-logo" src="images/logo/NEXT_EVENTlogo.png">
+                        <div class="subtitle s2 palm">FEB XX-XX</div>
+                    </div>
+                    <div class="pricing-items">
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>General Admission</h2>
+                                            <!-- <h3>Early Bird Pricing</h3> -->
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">€</p>
+                                            <p class="dollar-value">149*</p>
+                                        </div>
+                                        <p>* Limited Availability</p>
+                                    </div>
+                                    <div>
+                                        <h3 style="color: white; text-align: center; margin: 0px;">Early Bird Pricing</h3>
+                                    </div>
+                                    <div class="buy-manage-buttons">
+                                        <a target="_blank" href="" class="simple-border-btn scroll-to">BUY NOW</a>
+                                        <a style="text-align: center; color: white;" target="_blank" href="" scroll-to">Manage GA Admissions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>VIP</h2>
+                                            <!-- <h3>Early Bird Pricing</h3> -->
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">€</p>
+                                            <p class="dollar-value">299</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 8px;">Enter 30 minutes early</p>
+                                        <p style="margin-bottom: 8px;">Special Door Entry</p>
+                                        <p style="margin-bottom: 8px;">Special Seating Area</p>
+                                    </div>
+                                    <div class="buy-manage-buttons">
+                                        <a target="_blank" href="" class="simple-border-btn scroll-to">BUY NOW</a>
+                                        <a style="text-align: center; color: white;" target="_blank" href="" scroll-to">Manage VIP Admissions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>VIP+</h2>
+                                            <!-- <h3>Early Bird Pricing</h3> -->
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">€</p>
+                                            <p class="dollar-value">379</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style="margin-bottom: 8px;">Includes Fast Pass</p>
+                                        <p style="margin-bottom: 8px;">Includes Party Pass</p>
+                                        <p style="margin-bottom: 8px;">Includes Event Gift</p>
+                                    </div>
+                                    <div class="buy-manage-buttons">
+                                        <a target="_blank" href="" class="simple-border-btn scroll-to">BUY NOW</a>
+                                        <a style="text-align: center; color: white;" target="_blank" href="" scroll-to">Manage VIP+ Admissions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="wow fadeIn" data-wow-delay=".4s">
+                            <div class="pricing-item" data-bgimage="url('./images/livestreaming_background.jpg')">
+                                <div class="inner">
+                                    <div class="top">
+                                        <div>
+                                            <h2>Livestreaming</h2>
+                                        </div>
+                                        <div class="price">
+                                            <p class="dollar-sign">$</p>
+                                            <p class="dollar-value">99</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Unable to attend IM UNITED in person? Don't miss out and sign up for the livestreaming starting Nov 5, 2021</p>
+                                        <p class=small-heading>Nov 5, 2021</p>
+                                        <p>9am - 12:30pm</p>
+                                        <p>2pm - 6pm</p>
+                                        <p class=small-heading>Nov 6, 2021</p>
+                                        <p>9am - 12:30pm</p>
+                                        <p>2pm - 6pm</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button onmouseup="myFunction()" class="simple-border-btn dropbtn">Buy</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="https://tickets.imacademy.events/v2/events/490/register_now">English</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/491/register_now">Spanish</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/492/register_now">German</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/493/register_now">French</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/494/register_now">Portuguese</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/495/register_now">Italian</a>
+                                            <a href="https://tickets.imacademy.events/v2/events/496/register_now">Polish</a>
+                                        </div>
+                                      </div>
+                                    <select class="btn-border" name="languages" id="languages" style="width: 100%; outline: none; -webkit-appearance:none; text-indent: 5px;">
+                                        <option value="">BUY</option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/490/register_now"><a target="_blank" href="">English</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/491/register_now"><a target="_blank" href="">Spanish</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/492/register_now"><a target="_blank" href="">German</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/493/register_now"><a target="_blank" href="">French</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/494/register_now"><a target="_blank" href="">Portuguese</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/495/register_now"><a target="_blank" href="">Italian</a></option>
+                                        <option  value="https://tickets.imacademy.events/v2/events/496/register_now"><a target="_blank" href="">Polish</a></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <h3 style="text-align: center;">All sales are final. Admissions are VAT inclusive and are non-refundable. Terms and Conditions apply. All admissions for IM BEYOND Barcelona are sold by IM MASTERY ACADEMY GLOBAL SL and processed by International Markets Live Inc on behalf of IM MASTERY ACADEMY GLOBAL SL.</h3>
+                </div>
+            </section>
+            <div class="section-divider"></div>
             <!-- section close -->
             <section style="display: none !important" id="section-intro" class="full-height relative owl-slide-wrapper no-top no-bottom text-white" data-stellar-background-ratio=".2">
                 <div class="overlay-gradient">
@@ -910,7 +1059,7 @@
                         <div class="container">
                             <div class="row">
 								<div class="col-md-12 text-center">
-									<div class="spacer-single sm-hide"></div>
+									<!-- <div class="spacer-single sm-hide"></div> -->
                                     <div class="inline-block header-ima-logo">
                                         <img src="images/logo/IM_UNITED_COLORED_LOGO.png" >
                                     </div>
@@ -939,7 +1088,7 @@
                 </div>
                 <div class="pricing-items">
                     <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
+                        <div class="pricing-item" style="overflow:visible;" data-bgimage="url('./images/audience_optimized.jpg')">
                             <div class="inner">
                                 <div class="top">
                                     <div>
@@ -957,7 +1106,7 @@
                         </div>
                     </div>
                     <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" data-bgimage="url('./images/VIP.jpg')">
+                        <div class="pricing-item" data-bgimage="url('./images/VIP.jpg')">
                             <div class="inner">
                                 <div class="top">
                                     <div>
@@ -977,7 +1126,7 @@
                         </div>
                     </div>
                     <div class="wow fadeIn" data-wow-delay=".4s">
-                        <div class="pricing-s1" data-bgimage="url('./images/livestreaming_background.jpg')">
+                        <div class="pricing-item" data-bgimage="url('./images/livestreaming_background.jpg')">
                             <div class="inner">
                                 <div class="top">
                                     <div>
