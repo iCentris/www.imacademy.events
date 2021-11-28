@@ -563,9 +563,6 @@
 		$("div,section").css('background-image', function() {
 			return jQuery(this).data('bgimage');
 		});
-		$("div,section").css('background-size', function() {
-			return 'cover';
-		});
 	}
 	/* --------------------------------------------------
 	 * custom elements

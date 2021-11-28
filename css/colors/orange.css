@@ -1,4 +1,4 @@
-/* default color: #ffa854  */
+/* default color: #10f1ff  */
 .bg-color,
 section.bg-color,
 section.call-to-action,
@@ -55,12 +55,12 @@ span.overlay,
 .social-icons-sm i:hover,
 .btn-rsvp,
 .btn-close,
-.pricing-s1 .ribbon,
+.pricing-item .ribbon,
 .de_tab.tab_style_4 .de_nav li.active,
 a.btn-fullwidth,
 .de_testi.opt-3 blockquote:before
 {
-	background-color:#ffa854 ;
+	background-color:#10f1ff ;
 }
 
 .feature-box i,
@@ -116,9 +116,9 @@ h2.hs1 span,
 .de_light #mainmenu li a.active,
 .profile_pic .subtitle,
 .countdown-s4 .countdown-period,
-.pricing-s1 .bottom ul li i
+.pricing-item .bottom ul li i
 {
-	color:#ffa854;
+	color:#10f1ff;
 }
 
 .feature-box i,
@@ -142,7 +142,7 @@ h2.hs1 span,
 .de_tab.tab_style_4 .de_nav
 {
 
-	border-color:#ffa854 ;
+	border-color:#10f1ff ;
 }
 
 .box-fx .inner,
@@ -159,11 +159,11 @@ h2.hs1 span,
 .text-light .separator span:after ,
 .form-underline input[type=text]:focus, .form-underline textarea:focus, .form-underline input[type=email]:focus, .form-underline select:focus
 {
-	border-bottom-color:#ffa854 ;
+	border-bottom-color:#10f1ff ;
 }
 
 .preloader1 {
-	border-top-color:#ffa854 ;
+	border-top-color:#10f1ff ;
 }
 
 
