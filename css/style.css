@@ -208,6 +208,15 @@ header nav a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+
+#topBanner {
+  background: #fff;
+  padding: 10px;
+  font-weight:bold;
+  border-radius: 4px;
+}
+
 header nav a:hover {
   color: #555;
 }
@@ -230,7 +239,7 @@ header.smaller #mainmenu ul ul {
   top: 0px;
 }
 header.smaller {
-  height: 70px;
+  height: 135px;
   background: rgba(50, 50, 50, 0.95);
   position: fixed;
   top: 0px;
