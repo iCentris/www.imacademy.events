@@ -209,11 +209,10 @@ header nav a {
   transition: all 0.3s;
 }
 
-
 #topBanner {
   background: #fff;
   padding: 10px;
-  font-weight:bold;
+  font-weight: bold;
   border-radius: 4px;
 }
 
@@ -2908,7 +2907,7 @@ span.teaser {
   transition: box-shadow 1s;
   -webkit-transition: box-shadow 1s;
   -moz-transition: box-shadow 1s;
-  background-image: url('../images/background/bg.png');
+  background-image: url("../images/background/bg.png");
   background-size: cover;
 }
 .pricing-item .top {
@@ -2921,10 +2920,23 @@ span.teaser {
   flex-direction: column;
   margin-bottom: -18px;
 }
+.pricing-item .top .label-box {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  height: 43px;
+}
 .pricing-item .top h2 {
+  margin-bottom: 0;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: normal;
+}
+.plus {
+  font-size: 35px;
+  margin-bottom: 2px;
 }
 .pricing-item .top h3 {
   color: #ffffff;
@@ -2941,7 +2953,7 @@ span.teaser {
   justify-content: center;
 }
 .dollar-sign {
-  font-size: 24px;
+  font-size: 30px;
   margin: 8px 8px 0 0;
 }
 .dollar-value {
@@ -2977,12 +2989,12 @@ span.teaser {
   right: 0;
   border-top: 2px solid;
   border-color: inherit;
-  
-  -webkit-transform:rotate(12deg);
-  -moz-transform:rotate(12deg);
-  -ms-transform:rotate(12deg);
-  -o-transform:rotate(12deg);
-  transform:rotate(12deg);
+
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
 }
 .pricing-item .buy-manage-buttons {
   display: flex;
