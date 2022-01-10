@@ -1,4 +1,7 @@
 /* general settings for section & subheader */
+.text-striked {
+    text-decoration: line-through;
+}
 section,
 #subheader {
     -webkit-background-size: 100%;
