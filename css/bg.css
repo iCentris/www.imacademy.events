@@ -23,6 +23,10 @@ section,
 #section-sponsors {
     background: url(../images/background/4.jpg) fixed;
 }
+.venue-address {
+    text-align: center;
+    margin-top: 12px;
+}
 .video {
     position: absolute;
     top: 0;
