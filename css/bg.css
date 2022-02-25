@@ -85,6 +85,28 @@ section,
     color: #10f1ff;
 }
 
+.after-party-message {
+    font-size: 4.4rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-align: center;
+}
+.plus-icon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.plus-icon {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 30px;
+    border: 2pt solid white;
+    display: grid;
+    place-items: center;
+}
+
 /* AGENDA STYLES  */
 #section-agenda {
     /* background-image: url('../images/BG_blocks.jpg');
