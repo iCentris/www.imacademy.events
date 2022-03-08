@@ -54,6 +54,7 @@ section,
   height: 100% !important;
   object-fit: contain;
 }
+
 .header-buttons {
   margin-top: 15%;
   display: grid;
@@ -70,19 +71,39 @@ section,
   justify-content: center;
   align-items: center;
   text-decoration: none !important;
-  transition: 0.45s ease-in-out all;
+  transition: 0.45s ease-in-out all !important;
 }
 .header-buttons .header-button:hover {
   background-color: white;
   cursor: pointer;
+  animation: none;
+  transition: 0.45s ease-in-out all !important;
 }
 .header-buttons .header-button span {
   color: white;
   font-weight: 600;
   font-size: 2rem;
+  transition: 0.45s ease-in-out all !important;
 }
 .header-buttons .header-button:hover span {
   color: #10f1ff;
+  animation: none;
+}
+.pulse-header-button {
+  animation-name: pulse;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  transition: 2500ms;
+}
+.pulse-header-button span {
+  animation-name: pulsetext;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  transition: 2500ms;
+}
+.early-bird-label {
+  padding-bottom: 12px;
+  font-weight: bold;
 }
 
 .after-party-message {
@@ -392,5 +413,32 @@ section,
     width: 70% !important;
     height: 70% !important;
     object-fit: contain;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  50% {
+    transform: scale(1.01);
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes pulsetext {
+  0% {
+    color: #10f1ff;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #10f1ff;
   }
 }
