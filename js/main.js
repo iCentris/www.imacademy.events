@@ -1,8 +1,9 @@
-const buyLivestreamPalmBeachId = document.getElementById(
-  "buy-livestream-palmbeach"
+const buyLivestreamBarcelonaId = document.getElementById(
+  "buy-livestream-barcelona"
 );
 
-buyLivestreamPalmBeachId.onclick = function () {
-  const options = document.getElementById("livestream-options-palmbeach");
+buyLivestreamBarcelonaId.onclick = function (e) {
+  e.preventDefault();
+  const options = document.getElementById("livestream-options-barcelona");
   options.classList.toggle("livestream-options--show");
 };
